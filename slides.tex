@@ -1,0 +1,142 @@
+\documentclass{beamer}
+\usepackage{csquotes}
+\usetheme{default}
+\begin{document}
+\title{Introduction to Set Theory}
+\author{Joe Gurr}
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+    \begin{displayquote}
+        Every mathematician agrees that every mathematician must know some set theory;
+        the disagreement begins in trying to decide how much is some - Paul Halmos
+    \end{displayquote}
+\end{frame}
+
+\section{What is a set}
+
+\begin{frame}{What is a set}
+    A set is a collection of ``things''. \\~\
+
+    What ``things'' you may ask? Almost anything you'd like ... \\~\
+\end{frame}
+
+\begin{frame}
+    A collection of three colours, red, blue, and yellow is a set. So is the collection of the names of capital cities of Australia (or the world for that matter). \\~\
+
+    We write a set by enclosing the collection of ``things'' inside $\{\text{brackets}\}$ with commas separating the different objects. \\~\
+
+    \textcolor{blue}{e.g.} $\{\text{North}, \text{East}, \text{South}, \text{West}\}$ is a set \\~\
+
+    Often we consider sets that contain numbers. Other times we consider sets that contain sets! \\~\
+
+    \textcolor{blue}{e.g.} $\{17, 42, 108\}$ is also a set \\~\
+\end{frame}
+
+\begin{frame}
+    Sets do not care about multiples of the same ``thing'', nor do they care about order \\~\
+
+    \textcolor{blue}{e.g.} $\{\text{cat}, \text{dog}\}$ is the same as $\{\text{cat}, \text{dog}, \text{cat}\}$ \\~\
+
+    \textcolor{blue}{e.g.} $\{1, 2, 3\}$ is the same as $\{3,2,1\}$
+\end{frame}
+
+\begin{frame}
+    We use the symbol $\in$ to represent ``membership'' to a set. \\~\
+
+    We write $1 \in \{1,2,3\}$ to say, 1 is a ``member of'' (or ``belongs to'')
+    the set $\{1, 2, 3\}$. $4 \notin \{1,2,3\}$. \\~\
+
+    We usually denote a set with a capital letter (usually starting at the start of the alphabet). \\~\
+
+    We generally denote members of the set with a lower case letter (usually from the end of the alphabet). \\~\
+
+    For example you will often see something like. Let $x$ be a member of the set $A$.
+\end{frame}
+
+\begin{frame}
+    If all the members in one set, say set $A$, also belong to another set, say set $B$,
+    we say that $A$ is a subset of $B$. We write this as $A \subseteq B$. \\~\
+
+    $B$ may very well contain more ``things'' than $A$. \\~\
+
+    For example the set $\{1,2,3\} \subseteq \{\cdots, -2, -1,0,1,2,\cdots\}.$
+\end{frame}
+
+\section{Some famous sets}
+
+\begin{frame}{Some famous sets}
+    \begin{itemize}
+        \item The counting numbers $\{0, 1, 2, 3, 4, 5, \cdots\}$,
+              otherwise known as the Natural Numbers, denoted by $\mathbb{N}$
+        \item The Integers $\{\cdots, -2, -1, 0, 1, 2, \cdots\}$ denoted by $\mathbb{Z}$
+        \item The Rational Numbers, i.e. those numbers that can be expressed as a ratio of two integers, denoted by $\mathbb{Q}$
+        \item The Real Numbers, denoted by $\mathbb{R}$
+        \item The set with no members $\{\}$, otherwise known as the Empty Set, denoted by $\emptyset$
+    \end{itemize}
+\end{frame}
+
+\section{What can we do with sets}
+
+\begin{frame}{What can we do with sets}
+    Create a new set by combining the members of other sets. We call this the \underline{Union} of sets.
+    We write the union of two sets $A$ and $B$ as $A \cup B$. \\~\
+
+    \textcolor{blue}{e.g.} Let $A = \{a, b, c\}$ and let $B = \{x, y\}$, then $A \cup B = \{a, b, c, x, y\}$
+\end{frame}
+
+\begin{frame}{What can we do with sets}
+    Create a new set by including only the common members of other sets. We call this the \underline{Intersection} of sets.
+    We write the intersection of two sets $C$ and $D$ as $C \cap D$. \\~\
+
+    \textcolor{blue}{e.g.} Let $C = \{-2, 0, 2\}$ and let $D = \{-1, 0, 1\}$, then $C \cap D = \{0\}$
+\end{frame}
+
+\begin{frame}{What can we do with sets}
+    Count them ... well, kind of, ... We call this the \underline{Cardinality} of a set.
+    Formally it is not really a ``count'', but we will get to that another day!
+    The number of elements (the Cardinality) of a set $A$ is is denoted by $|A|$ \\~\
+
+    \textcolor{blue}{e.g.} Let $A = \{a, b, c\}$, then $|A| = 3$.
+\end{frame}
+
+\begin{frame}
+    We often write a set explicitly, by listing out all of the elements in the set. \\~\
+
+    This doesn't work when we want to write out infinite sets. \\~\
+
+    In these cases we use a ``generating rule'' (or rules) to define how a set is generated. \\~\
+
+    For example, we could define the even integers the following way: $\{2x \text{ such that } x \in \mathbb{Z}\}$
+\end{frame}
+
+\section{Big results in set theory}
+
+\begin{frame}{Big results in set theory}
+    I'd like to end this session by briefly bringing up some of the most famous results of Set Theory.
+    I want to give the beginning of an answer to the question ``Why do we care about sets?'' \\~\
+
+    I don't expect anyone to completely understand any of this,
+    but I think it is important to at least name of some of the most significant results.
+    So that anyone interested can look it up themselves (or talk to me!). \\~\
+    \begin{itemize}
+        \item Formal ways of building the real numbers (via Dedekind cuts for example)
+        \item There are more real numbers than natural numbers (Cantor's Diagonalisation Argument)
+        \item Mathematics doesn't play as nice as we would have liked (Godel's Incompleteness Theorems)
+    \end{itemize}
+\end{frame}
+
+\section{Further reading}
+
+\begin{frame}{Further reading}
+    I'd recommend the following two resources! \\~\
+    \begin{itemize}
+        \item \href{https://plato.stanford.edu/entries/set-theory/}{Stanford Encyclopedia of Philosophy - Set Theory}
+        \item \href{https://en.wikipedia.org/wiki/Naive_Set_Theory_(book)}{Naive Set Theory by Paul Halmos}
+    \end{itemize}
+\end{frame}
+
+\end{document}

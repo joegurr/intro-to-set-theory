@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+% \usepackage[margin=1in]{geometry}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\title{Introduction to Set Theory Tutorial}
+\author{Joe Gurr}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Welcome to my first tutorial session on Set Theory! My name is Joe.
+I want this to be an open, judgement-free space to ask questions and learn.
+I'd really appreciate any questions you have at any stage, so  please, please feel free to interrupt me!
+
+I'd like to begin by saying Set Theory as a separate mathematical discipline is a relatively
+modern branch of mathematics.
+It is also quite abstract, and it could take some time for it to sink in fully.
+It took me some time to appreciate why it exists and its inherent beauty,
+hopefully I can help make it easier for you to understand.
+
+I know that this will be the first time many of you will have been exposed
+to Set Theory, so this tutorial sheet should be approached in conjunction with a brief slideshow
+I have prepared going through the very fundamentals of Set Theory.
+If you haven't yet got a copy of this please reach out!
+
+I'd like to group people together and give you some time to work things out.
+Just remember that I'm here at any stage if you need a hand at all!
+
+\newpage
+
+\begin{enumerate}[label=(\alph*)]
+    \item Are the following statements True or False:
+          \begin{enumerate}[label=(\roman*)]
+              \item For all sets $X$, $\emptyset \subseteq X$ (reminder: check for $X = \emptyset$)
+              \item $|\emptyset| = 0$
+              \item $|\{\emptyset\}| = 0$
+              \item If $A \subseteq B$ and $B \subseteq A$ then $A = B$
+              \item There exits a set $X$ such that $|X| < 0$
+          \end{enumerate}
+    \item We define the \underline{Cartesian Product} between two sets
+          $A$ and $B$ as
+          \begin{equation*}
+              A \times B = \{(x,y) \text{ where } x \in A \text{ and } y \in B\}
+          \end{equation*}
+          \begin{enumerate}[label=(\roman*)]
+              \item What is $A \times B$ where $A = \{1, 2, 3\}$ and $B = \{10, 11\}$?
+              \item What is $C \times D$ where $C = \{ \{1, 2\}, 3\}$ and $B = \{\emptyset, \{\emptyset\}\}$?
+          \end{enumerate}
+    \item What does $\mathbb{R} \times \mathbb{R}$ represent? Where have you seen this set before?
+
+          (\textit{note}: $\mathbb{R} \times \mathbb{R}$ is also often called $\mathbb{R}^2$)
+    \item Express $|A \times B|$ in terms of $|A|$ and $|B|$
+    \item We define the \underline{Set Difference} between two sets $A$ and $B$ as
+          \begin{equation*}
+              A - B = \{ x \text{ where } x \in A \text{ and } x \notin B \}
+          \end{equation*}
+          Calculate the following Set Differences:
+          \begin{enumerate}[label=(\roman*)]
+              \item Let $A =\{ 1, 2, 3\}$ and $B$ be the set of even numbers. What is $A - B$
+              \item What is $\mathbb{Z} - \mathbb{N}$
+          \end{enumerate}
+          (\textit{note}: Set Difference is also commonly denoted by $A \setminus B$)
+    \item We define the \underline{Complement} of a set $A$ with respect to a particular superset $B$ (recall that a superset means that $A \subseteq B$)
+          \begin{equation*}
+              A^{'} = \{ x \text{ where } x \in B \text{ and } x \notin A \}
+          \end{equation*}
+          \begin{enumerate}[label=(\roman*)]
+              \item Let $A = \{1, 2, 3\}$ and $B = {1, 2, 3, 4, 5}$, what is the complement of $A$ with respect to $B$?
+              \item What is the complement of $\mathbb{Q}$ with respect to the superset $\mathbb{R}$?
+          \end{enumerate}
+          (\textit{note}: the Complement of a set is also commonly denoted $A^c$)
+
+          (\textit{question}: are Set Difference and Complement the same? If not, how do they differ?)
+    \item \textbf{(Bonus)} Research and provide a definition of how "relations" and "functions" are defined in Set Theory. What is the difference between a relation and a function?
+\end{enumerate}
+\end{document}
